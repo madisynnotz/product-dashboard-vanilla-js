@@ -61,4 +61,9 @@ function displayProducts(products) {
       productContainer.appendChild(productDiv);
     });
   }
-  
+ 
+  // Task 5: Reusable Error Handler
+
+function handleError(error) {
+    console.log("Task 5: Something went wrong, here's the error: ", error.message);
+  }
