@@ -67,3 +67,11 @@ function displayProducts(products) {
 function handleError(error) {
     console.log("Task 5: Something went wrong, here's the error: ", error.message);
   }
+
+  // Task 6: Call Your Fetch Functions
+
+console.log("Task 6: Running both fetch methods...");
+
+// Call both fetch functions so we can see the results in the console and on the page
+fetchProductsThen();  // Using .then()
+fetchProductsAsync();  // Using async/await
