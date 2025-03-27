@@ -1,0 +1,33 @@
+/* Just making the page look a little nicer */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Styling the container where products will go */
+  #product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Each product's box will have this styling */
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the product images */
+  .product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
