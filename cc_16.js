@@ -31,6 +31,7 @@ async function fetchProductsAsync() {
     // Fetch the product data
     const response = await fetch('https://www.course-api.com/javascript-store-products');
     const data = await response.json();  // Get the data as JSON
+    console.log(data);  // Log the API response to inspect the structure
     displayProducts(data);  // Show the products on the page
   } catch (error) {
     // If there's any error, handle it with the custom error handler
