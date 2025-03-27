@@ -40,3 +40,25 @@ async function fetchProductsAsync() {
 
 // Call the function to fetch and display products
 fetchProductsAsync();
+
+// Task 4: Display the Products
+
+function displayProducts(products) {
+    console.log("Task 4: Displaying products in the DOM");
+  
+    const productContainer = document.getElementById('product-container');
+    // We only want to show the first 5 products
+    products.slice(0, 5).forEach(product => {
+      // Creating HTML to show each product's name, price, and image
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('product');
+      productDiv.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <h2>${product.name}</h2>
+        <p>$${product.price}</p>
+      `;
+      // Adding the product to the container on the page
+      productContainer.appendChild(productDiv);
+    });
+  }
+  
