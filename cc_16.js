@@ -50,6 +50,10 @@ function displayProducts(products) {
     const productContainer = document.getElementById('product-container');
     // We only want to show the first 5 products
     products.slice(0, 5).forEach(product => {
+     // Use fallback values if product properties are undefined or missing
+      const name = product.name || 'No name available';
+      const price = product.price || 'No price available';
+      const image = product.image || 'https://via.placeholder.com/150';  // Fallback image
       // Creating HTML to show each product's name, price, and image
       const productDiv = document.createElement('div');
       productDiv.classList.add('product');
